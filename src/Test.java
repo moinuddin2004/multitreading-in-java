@@ -13,16 +13,18 @@ public class Test extends Thread {
 //        System.out.println("running");
 //    }
 
-    static void main(String[] args) throws InterruptedException {
-        Counter counter = new Counter();
-        MyThread t1 = new MyThread(counter);
-        MyThread t2 = new MyThread(counter);
 
-        t1.start();
-        t2.start();
-        t1.join();
-        t2.join();
-        System.out.println(counter.getCount());
+
+//    static void main(String[] args) throws InterruptedException {
+//        Counter counter = new Counter();
+//        MyThread t1 = new MyThread(counter);
+//        MyThread t2 = new MyThread(counter);
+//
+//        t1.start();
+//        t2.start();
+//        t1.join();
+//        t2.join();
+//        System.out.println(counter.getCount());
 
 
 //        Test test = new Test();
@@ -45,6 +47,6 @@ public class Test extends Thread {
 //        Thread thread = new Thread(world2);
 //        thread.start();
 //        System.out.println("Bye");
-    }
+//    }
     // run , start . yeild, intrupt , set priority , sleep , isDeamon
 }
